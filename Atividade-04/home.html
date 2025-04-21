@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <script type="module" src="./dist/script.js"></script>
+    <title>Gerenciamento de Funcionários</title>
+  </head>
+  <body>
+    <div>
+      <h1>Cadastro de Funcionarios</h1>
+      <form id="cadastro-funcionario" action="home.html" method="post">
+        <input type="text" name="nome" id="nome" placeholder="Nome">
+        <input type="number" name="idade" id="idade" placeholder="Idade">
+        <input type="number" name="salario" id="salario" placeholder="Salario Base">
+        <input type="hidden" name="hard_skills" id="hard_skills" placeholder="Hard Skills">
+        <input type="hidden" name="liderados" id="liderados" placeholder="QTD Pessoas Lideradas">
+
+        <label for="tipo_funcionario">Tipo de Funcionario</label>
+        <select name="tipo_funcionario" id="tipo_funcionario" size="1">
+          <option value="lider">Líder</option>
+          <option value="analista" selected>Analista</option>
+        </select>
+
+        <button type="submit" name="cadastrar" id="cadastrar">Cadastrar</button>
+      </form>
+    </div>
+    <div>
+      <h1>Funcionários Cadastrados</h1>
+      <ul name="lista_funcionarios" id="lista_funcionarios"></ul>
+    </div>
+  </body>
+</html>
